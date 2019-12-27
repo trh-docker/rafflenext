@@ -1,4 +1,4 @@
 0.0.0.0:8080 {
-    root / /opt/tlm/trivia_web
+    root /opt/tlm/trivia_web
     index index.html
 }
