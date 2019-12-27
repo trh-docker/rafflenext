@@ -1,6 +1,8 @@
 FROM quay.io/spivegin/caddy_only:latest AS caddy_only
 FROM quay.io/spivegin/gitonly:latest AS git
 WORKDIR /opt/tlm/
+RUN ssh-keyscan -H github.com > ~/.ssh/known_hosts &&\
+    ssh-keyscan -H gitlab.com >> ~/.ssh/known_hosts
 RUN git clone git@gitlab.com:rafflenext/web.git trivia_web
 
 FROM quay.io/spivegin/tlmbasedebian
