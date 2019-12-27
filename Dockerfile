@@ -1,7 +1,7 @@
 FROM quay.io/spivegin/caddy_only:latest AS caddy_only
 FROM quay.io/spivegin/gitonly:latest AS git
 WORKDIR /opt/tlm/
-RUN git clone https://github.com/rafflenext/rafflenext.github.io.git trivia_web
+RUN git clone git@gitlab.com:rafflenext/web.git trivia_web
 
 FROM quay.io/spivegin/tlmbasedebian
 RUN mkdir /opt/bin
