@@ -10,5 +10,5 @@ ADD Caddyfile /opt/tlm/
 COPY --from=git /opt/tlm/trivia_web /opt/tlm/trivia_web
 COPY --from=caddy_only /opt/bin/caddy /opt/bin/caddy
 RUN chmod +x /opt/bin/caddy && ln -s /opt/bin/caddy /bin/caddy
-CMD ["caddy", "-conf /opt/tlm/Caddyfile"]
+CMD ["caddy", "-conf", "/opt/tlm/Caddyfile"]
 EXPOSE 8080
