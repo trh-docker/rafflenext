@@ -13,7 +13,9 @@ RUN git clone https://sc.tpnfc.us/RaffleNext/gcx_grand.git && \
     git clone https://sc.tpnfc.us/askforitpro/game_trivia.git &&\
     git clone git@gitlab.com:trhhosting/gcx_grand_scss.git &&\
     cd gcx_grand && pub get &&\
-    pub run build_runner build -r --delete-conflicting-outputs -o release
+    pub run build_runner build -r --delete-conflicting-outputs -o release &&\
+    rm release/web/index.html && mv release/web/index.html.dist release/web/index.html
+
 
 FROM quay.io/spivegin/tlmbasedebian
 RUN mkdir /opt/bin
