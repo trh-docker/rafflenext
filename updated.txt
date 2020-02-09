@@ -15,3 +15,5 @@ v1.0.7
 v1.1.0
 v1.1.0 --  b046f30..571492d  master -> master
 v1.1.1 -- 4d4b3d9..030fefa
+v1.1.2 -- 70ff5ce..829127a  master -> master
+
