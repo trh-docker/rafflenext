@@ -21,3 +21,4 @@ v1.1.3a --47f523360b..4702c8152d
 v1.1.3 -- 85fb282..1cadf87
 v1.1.4 -- 1cadf87..dca381d fix cors bug
 v1.1.4 -- fadd745..4169805 added google adsense
+v1.1.5 -- 4169805..d45477a added tracking
